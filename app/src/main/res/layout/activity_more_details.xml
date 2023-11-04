@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    tools:context=".BookingsTab">
+
+    <!-- Top Horizontal Bar -->
+    <LinearLayout
+        android:id="@+id/topBar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backbutton"
+            android:src="@drawable/back" />
+
+        <TextView
+            style="@style/eventtitleFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onerios"
+            android:textSize="45sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingStart="16sp"
+            android:paddingTop="8sp"
+            android:paddingBottom="8sp"/>
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/surprisedpea"
+            />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="290sp"
+        android:elevation="6sp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/topBar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:cardCornerRadius="8sp"
+        android:layout_margin="8sp"
+        android:id="@+id/eventimagecardview">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8sp"
+            android:src="@drawable/sampleimage">
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/eventdetailsbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventimagecardview">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="book now"
+            android:textSize="20sp"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dateCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/dateTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="October 30, 2023"
+                    android:textSize="22sp"
+                    android:textColor="@android:color/white"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/eventdetailsbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="6sp"
+        android:layout_margin="10sp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:layout_margin="3sp"
+        android:text="This is a sample text describing a sample event BHUPENDRA JOGI  BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI"
+        style="@style/DescriptionTextStyle"
+    />
+</androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

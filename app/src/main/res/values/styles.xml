@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="titleFont">
+        <item name="android:fontFamily">@font/title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="cardTitle">
+        <item name="android:fontFamily">@font/alttitle</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+    <style name="buttonTxt">
+        <item name="android:fontFamily">@font/btntxtf</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="inAppHeadings">
+        <item name="android:fontFamily">@font/inappheadings</item>
+        <item name="android:color">@color/white</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="eventtitleFont">
+        <item name="android:fontFamily">@font/eventtitlemedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="DescriptionTextStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/description</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

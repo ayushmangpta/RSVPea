@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottomBar"
+        android:layout_height="0sp"
+        android:layout_width="0sp"
+        tools:context=".BottomNavBar">
+
+    <!-- Add your navigation elements (buttons, icons, etc.) here -->
+    <ImageButton
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/home"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/postclickhome"
+        android:layout_weight="1"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/myBookings"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/mybookingspreclick"
+        android:layout_weight="1"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:id="@+id/myProfile"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/profilepreclick"
+        android:layout_weight="1"
+        android:onClick="onClick"/>
+</LinearLayout>
