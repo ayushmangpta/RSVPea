@@ -39,6 +39,12 @@
             android:paddingEnd="0sp"
             android:src="@drawable/titlept"
             />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_cloud_upload_24"
+            android:id="@+id/uploadnewevent"/>
+
         <EditText
             android:id="@+id/searchBar"
             android:layout_width="0sp"

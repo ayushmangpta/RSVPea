@@ -45,6 +45,13 @@ public class Home extends AppCompatActivity {
         home.setOnClickListener(buttonClickListenerHome);
         profile.setOnClickListener(buttonClickListenerProfile);
         bookings.setOnClickListener(buttonClickListenerBookings);
+        findViewById(R.id.uploadnewevent).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, UploadActivity.class);
+                Home.this.startActivity(intent);
+            }
+        });
 
     }
 }
