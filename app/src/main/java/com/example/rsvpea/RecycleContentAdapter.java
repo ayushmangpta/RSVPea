@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class RecycleContentAdapter extends RecyclerView.Adapter<RecycleContentAdapter.ViewHolder> {
@@ -25,13 +27,16 @@ public class RecycleContentAdapter extends RecyclerView.Adapter<RecycleContentAd
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
        View v= LayoutInflater.from(context).inflate(R.layout.timeline_item, parent, false);
-        ViewHolder viewHolder= new ViewHolder(v);
-        return viewHolder;
+        return new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.img.setImageResource(arrContent.get(position).img);
+        TimelineCardContent content = arrContent.get(position);
+        //holder.img.setImageResource(arrContent.get(position).img);
+        Picasso.get()
+                .load(content.img)
+                .into(holder.img);
         holder.title.setText(arrContent.get(position).title);
         holder.moreDetailsButton.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), MoreDetails.class);

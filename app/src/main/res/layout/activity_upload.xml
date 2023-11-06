@@ -42,10 +42,10 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/uploadTopic"
+                android:id="@+id/uploadEventName"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter topic name"
+                android:hint="Enter Event name"
                 android:gravity="start|center_vertical"/>
 
             <EditText
@@ -60,10 +60,18 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/uploadLang"
+                android:id="@+id/uploadDate"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter language"
+                android:hint="Enter Date"
+                android:gravity="start|center_vertical" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/uploadVenue"
+                android:layout_marginTop="20dp"
+                android:padding="16dp"
+                android:hint="Enter Venue"
                 android:gravity="start|center_vertical" />
 
             <Button

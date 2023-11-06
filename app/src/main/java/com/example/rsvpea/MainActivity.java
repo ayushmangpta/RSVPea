@@ -16,8 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        System.out.println("hello");
         super.onCreate(savedInstanceState);
         Intent intent = new Intent(this, Home.class);
         this.startActivity(intent);
+
     }
 }
