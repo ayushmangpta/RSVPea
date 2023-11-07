@@ -11,18 +11,18 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="20dp"
-        app:cardCornerRadius="30dp"
-        app:cardElevation="20dp">
+        android:layout_marginTop="50sp"
+        android:layout_marginEnd="25sp"
+        android:layout_marginStart="20sp"
+        app:cardCornerRadius="30sp"
+        app:cardElevation="20sp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_horizontal"
-            android:padding="20dp">
+            android:padding="20sp">
 
             <TextView
                 android:layout_width="match_parent"
@@ -33,55 +33,55 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="200sp"
                 android:src="@drawable/uploadimg"
                 android:id="@+id/uploadImage"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="10sp"
                 android:scaleType="fitXY"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="60sp"
                 android:id="@+id/uploadEventName"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:layout_marginTop="20sp"
+                android:padding="16sp"
                 android:hint="Enter Event name"
                 android:gravity="start|center_vertical"/>
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="80sp"
                 android:id="@+id/uploadDesc"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:layout_marginTop="20sp"
+                android:padding="16sp"
                 android:hint="Enter description"
                 android:gravity="start|center_vertical" />
 
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="60sp"
                 android:id="@+id/uploadDate"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:layout_marginTop="20sp"
+                android:padding="16sp"
                 android:hint="Enter Date"
                 android:gravity="start|center_vertical" />
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="60sp"
                 android:id="@+id/uploadVenue"
-                android:layout_marginTop="20dp"
-                android:padding="16dp"
+                android:layout_marginTop="20sp"
+                android:padding="16sp"
                 android:hint="Enter Venue"
                 android:gravity="start|center_vertical" />
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="60sp"
                 android:text="Save"
                 android:id="@+id/saveButton"
                 android:textSize="18sp"
-                android:layout_marginTop="20dp"
-                app:cornerRadius = "20dp"/>
+                android:layout_marginTop="20sp"
+                app:cornerRadius = "20sp"/>
 
         </LinearLayout>
 

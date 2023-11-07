@@ -48,10 +48,10 @@ public class Home extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot itemSnapshot : snapshot.getChildren()){
-                    String img = itemSnapshot.child("image").getValue(String.class);
-                    String eventTitle = itemSnapshot.child("eventTitle").getValue(String.class);
-//                    UploadEventModel temp = itemSnapshot.getValue(UploadEventModel.class);
-                    timelineCardContents.add(new TimelineCardContent(img, eventTitle));
+//                    String img = itemSnapshot.child("image").getValue(String.class);
+//                    String eventTitle = itemSnapshot.child("eventTitle").getValue(String.class);
+                    UploadEventModel temp = itemSnapshot.getValue(UploadEventModel.class);
+                    timelineCardContents.add(new TimelineCardContent(temp.getImage(), temp.getEventTitle(), temp));
 
                 }
                 RecycleContentAdapter adapter = new RecycleContentAdapter(Home.this, timelineCardContents);

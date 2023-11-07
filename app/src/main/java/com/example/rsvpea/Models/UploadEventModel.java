@@ -1,6 +1,9 @@
 package com.example.rsvpea.Models;
 
-public class UploadEventModel {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class UploadEventModel implements Parcelable {
     private String eventTitle, Desc, date, venue, image;
 
     public UploadEventModel(String eventTitle, String desc, String date, String venue, String image) {
@@ -11,6 +14,40 @@ public class UploadEventModel {
         this.image = image;
     }
     public UploadEventModel(){}
+
+    protected UploadEventModel(Parcel in) {
+        eventTitle = in.readString();
+        Desc = in.readString();
+        date = in.readString();
+        venue = in.readString();
+        image = in.readString();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(eventTitle);
+        dest.writeString(Desc);
+        dest.writeString(date);
+        dest.writeString(venue);
+        dest.writeString(image);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<UploadEventModel> CREATOR = new Creator<UploadEventModel>() {
+        @Override
+        public UploadEventModel createFromParcel(Parcel in) {
+            return new UploadEventModel(in);
+        }
+
+        @Override
+        public UploadEventModel[] newArray(int size) {
+            return new UploadEventModel[size];
+        }
+    };
 
     public String getEventTitle() {
         return eventTitle;

@@ -44,6 +44,7 @@ public class MybookingContentAdapter extends RecyclerView.Adapter<MybookingConte
     public class ViewHolder extends RecyclerView.ViewHolder{
         TextView title1;
         ImageView img1;
+
         TextView datetime;
         TextView venue;
 

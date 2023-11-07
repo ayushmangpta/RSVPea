@@ -34,12 +34,6 @@ public class BookingsTab extends AppCompatActivity{
         RecyclerView bookingstimeline = findViewById(R.id.myBookingsRecyclerView);
         bookingstimeline.setLayoutManager(new LinearLayoutManager(this));
         bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
-        bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
-        bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
-        bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
-        bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
-        bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
-        bookingscontent.add(new MyBookingsTabContent(R.drawable.sample, "title Example", "27 October 2023 4:40pm", "Ramdas Pai"));
         MybookingContentAdapter adapter1 = new MybookingContentAdapter(this, bookingscontent);
         bookingstimeline.setAdapter(adapter1);
 

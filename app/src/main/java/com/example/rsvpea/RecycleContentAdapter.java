@@ -40,6 +40,9 @@ public class RecycleContentAdapter extends RecyclerView.Adapter<RecycleContentAd
         holder.title.setText(arrContent.get(position).title);
         holder.moreDetailsButton.setOnClickListener(v -> {
             Intent intent = new Intent(v.getContext(), MoreDetails.class);
+            intent.putExtra("title", content.title);
+            intent.putExtra("img", content.img);
+            intent.putExtra("eventModel",content.eventModel);
             v.getContext().startActivity(intent);
         });
 
