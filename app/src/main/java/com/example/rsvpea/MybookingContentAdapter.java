@@ -10,6 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
 public class MybookingContentAdapter extends RecyclerView.Adapter<MybookingContentAdapter.ViewHolder> {
@@ -23,13 +25,15 @@ public class MybookingContentAdapter extends RecyclerView.Adapter<MybookingConte
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v1= LayoutInflater.from(context).inflate(R.layout.mybookingscontent, parent, false);
-        ViewHolder viewHolder1= new ViewHolder(v1);
-        return viewHolder1;
+        return new ViewHolder(v1);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.img1.setImageResource(arrContent.get(position).img1);
+        MyBookingsTabContent content = arrContent.get(position);
+        Picasso.get()
+                .load(content.img1)
+                .into(holder.img1);
         holder.title1.setText(arrContent.get(position).title1);
         holder.datetime.setText(arrContent.get(position).datetime);
         holder.venue.setText(arrContent.get(position).venue);

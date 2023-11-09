@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.activity.ComponentActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class BottomNavBar extends AppCompatActivity implements View.OnClickListener {

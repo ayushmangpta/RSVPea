@@ -55,10 +55,9 @@ public class Home extends AppCompatActivity {
 
                 }
                 RecycleContentAdapter adapter = new RecycleContentAdapter(Home.this, timelineCardContents);
-                System.out.println(timelineCardContents);
                 timeline.setAdapter(adapter);
-                Log.d("FirebaseData", "Data retrieved: " + timelineCardContents.size() + " items");
-                Log.d("getChildren", "Children retrieved: " + snapshot.getChildrenCount() + " items");
+//                Log.d("FirebaseData", "Data retrieved: " + timelineCardContents.size() + " items");
+//                Log.d("getChildren", "Children retrieved: " + snapshot.getChildrenCount() + " items");
             }
 
             @Override

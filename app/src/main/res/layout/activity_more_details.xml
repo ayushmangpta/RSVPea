@@ -80,7 +80,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="book now"
+            android:text="Book Now"
+            android:id="@+id/booknowbtn"
             android:textSize="12sp" />
 
         <androidx.cardview.widget.CardView
@@ -90,7 +91,6 @@
             android:layout_margin="8sp"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp">
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -149,7 +149,7 @@
         android:layout_margin="3sp"
         android:textSize="12sp"
         android:id="@+id/descriptionText"
-        android:text="This is a sample text describing a sample event BHUPENDRA JOGI  BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI"
+        android:text="This is a sample text describing a sample event BHUPENDRA  JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI"
         style="@style/DescriptionTextStyle"
     />
 </androidx.cardview.widget.CardView>
