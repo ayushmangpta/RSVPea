@@ -4,7 +4,6 @@
 <body>
 
 <h1>RSVPea - College Event Management and Booking App</h1>
-<p><img src="RSVPea_Logo.png" alt="RSVPea Logo"></p>
 
 <h2>Technologies Used</h2>
 <ul>
