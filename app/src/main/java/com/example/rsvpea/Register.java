@@ -37,6 +37,13 @@ public class Register extends AppCompatActivity {
         binding.registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String email = binding.emailEditText.getText().toString();
+                String password = binding.passwordEditText.getText().toString();
+
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(Register.this, "Email and password are required", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 progressDialog.show();
                 auth.createUserWithEmailAndPassword(binding.emailEditText.getText().toString(), binding.passwordEditText.getText().toString()).
                         addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -48,6 +55,8 @@ public class Register extends AppCompatActivity {
                                 String id = task.getResult().getUser().getUid();
                                 database.getReference().child("Users").child(id).setValue(user);
                                 if(task.isSuccessful()){
+                                    Intent intent = new Intent(Register.this, MainActivity.class);
+                                    Register.this.startActivity(intent);
                                     Toast.makeText(Register.this,"User Registered Succesfully", Toast.LENGTH_SHORT).show();
                                 }
                                 else{
