@@ -19,6 +19,7 @@
 
 <h2>Features</h2>
 <ul>
+  <li><b>Theme :</b> Run the app in dark Mode only support for light mode will be added soon.</li>
   <li><b>User-Friendly Interface:</b> RSVPea offers an intuitive and user-friendly interface, making it easy for both event organizers and attendees to navigate the app effortlessly.</li>
   <li><b>Event Creation:</b> Event organizers can create and manage events with ease. Add event details, set event dates, locations, and include event descriptions to inform attendees.</li>
   <li><b>Event Booking:</b> Students and attendees can easily browse events, view event details, and RSVP for the events they wish to attend.</li>
