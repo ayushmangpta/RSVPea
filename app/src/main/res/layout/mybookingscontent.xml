@@ -29,17 +29,16 @@
             style="@style/cardTitle" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginStart="40sp"
-            android:layout_marginTop="60sp"
-            android:textSize="25sp"
-            android:text="27 October 2023 4:30pm"
-            style="@style/buttonTxt"
             android:id="@+id/date"
+            style="@style/buttonTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="60sp"
+            android:layout_marginLeft="135sp"
             android:backgroundTint="#4b8e4b"
-            />
+            android:text="27 October 2023"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/venue"
@@ -47,7 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
-            android:layout_marginStart="130sp"
+            android:layout_marginStart="135sp"
             android:layout_marginTop="90sp"
             android:backgroundTint="#4b8e4b"
             android:text="Ramdas Pai"

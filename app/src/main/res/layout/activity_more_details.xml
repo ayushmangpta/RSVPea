@@ -149,7 +149,7 @@
         android:layout_margin="3sp"
         android:textSize="12sp"
         android:id="@+id/descriptionText"
-        android:text="This is a sample text describing a sample event BHUPENDRA  JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI BHUPENDRA JOGI"
+        android:text="This is a sample Event Description\n Join us for an unforgettable night of music and fun! The MusicFest 2023 features top artists and exciting performances. Don't miss out on this amazing musical journey. Get your tickets now and make memories that will last a lifetime!"
         style="@style/DescriptionTextStyle"
     />
 </androidx.cardview.widget.CardView>
